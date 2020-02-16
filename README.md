@@ -1,6 +1,12 @@
-#HODL Button
+# HODL Button
 
 The button for BTC.
+
+This software is released under the OPEN ONLY-BTC-SPECIFIC LICENSE.
+That means that it is only permitted to use it on the BTC chain.
+Usage on any other chain is a license breach.
+
+# INSTRUCTIONS
 
 Usage For Payments:
 
