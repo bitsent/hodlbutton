@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      Button 1 :
+      <br> Working, BIP21 button
+      <div id="buttonArea1"></div>
+    </div>
+    <hr>
+    <div>
+      Button 2 :
+      <br> "Just HODL Bro" button
+      <div id="buttonArea2"></div>
+    </div>
+    <hr>
+    <input type="range" id="fontSizeRange" min="1" value="1.5" max="5" step="0.1" 
+        oninput="document.getElementById('div3').style.fontSize = this.value+'em';">
+    <div id="div3" style="font-size: 1.5em;">
+      Button 3 :
+      <br> Buttons scale with the font size.
+      <br> The font here is bigger, so the button is bigger too.
+      <div id="buttonArea3"></div>
+    </div>
+
+    <script src="hodlbutton.js"></script>
+    <script>
+      hodlbutton.create(
+        "#buttonArea1",
+        "Pay Me",
+        "1cf7uvEBNqXrpampZheh5FnFtYLZCgHHH",
+        0.005
+      );
+      hodlbutton.create("#buttonArea2", "Just HODL");
+      hodlbutton.create("#buttonArea3", "Just HODL");
+    </script>
+  </body>
+</html>
